@@ -173,16 +173,6 @@ http://localhost:8080/login.html
 
 ---
 
-## ⭐ Project Status
-
-- ✔ Backend Complete
-- ✔ JWT Security Implemented
-- ✔ Cart System Working
-- ✔ Order System Working
-- ✔ Frontend UI Connected
-
----
-
 ## 🚀 Author
 
 **Rakesh Patil**  
