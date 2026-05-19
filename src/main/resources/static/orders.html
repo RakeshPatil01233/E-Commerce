@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	
+<div class="navbar">
+    <h2 class="logo">🛒 MyStore</h2>
+
+    <div class="nav-links">
+        <button onclick="goToProducts()">Products</button>
+        <button onclick="goToCart()">Cart</button>
+        <button onclick="goToOrders()">Orders</button>
+        <button onclick="logout()" class="logout">Logout</button>
+    </div>
+</div>
+
+	
+<button onclick="window.location.href='products.html'" class="btn">
+    ← Back to Shop
+</button>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body onload="checkAuth(); loadOrders()">
+
+<h1 class="title">📦 My Orders</h1>
+
+<div id="orders">
+    <p>Loading orders...</p>
+</div>
+
+<script src="/js/app.js"></script>
+
+</body>
+</html>

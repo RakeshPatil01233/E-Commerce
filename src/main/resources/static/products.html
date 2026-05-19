@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body onload="checkAuth(); loadProducts()">
+
+<!-- 🔝 NAVBAR -->
+<div class="navbar">
+    <h2 class="logo">🛒 MyStore</h2>
+
+    <div class="nav-links">
+        <button onclick="goToProducts()">Products</button>
+        <button onclick="goToCart()">Cart</button>
+        <button onclick="goToOrders()">Orders</button>
+        <button onclick="logout()" class="logout">Logout</button>
+    </div>
+</div>
+
+<h2 class="title">Products</h2>
+
+<!-- 🔍 SEARCH -->
+<div style="text-align:center; margin-bottom:20px;">
+    <input type="text" id="searchInput" placeholder="Search products..."
+           onkeyup="searchProducts()" style="padding:8px; width:250px;">
+</div>
+
+<!-- 🛍️ PRODUCTS -->
+<div id="products" class="product-grid"></div>
+
+<!-- 🔥 ADMIN SECTION -->
+<div id="adminSection" style="display:none; text-align:center; margin-top:20px;">
+
+    <button onclick="toggleAddForm()">➕ Add Product</button>
+
+    <!-- ADD PRODUCT FORM -->
+    <div id="addProductForm" style="display:none; margin-top:20px;">
+        <input type="text" id="pName" placeholder="Name"><br><br>
+        <input type="text" id="pDesc" placeholder="Description"><br><br>
+        <input type="number" id="pPrice" placeholder="Price"><br><br>
+
+        <button onclick="addProduct()">Submit</button>
+    </div>
+
+</div>
+
+<br>
+
+<div style="text-align:center;">
+    <button onclick="goToCart()">Go to Cart</button>
+</div>
+
+<script src="/js/app.js"></script>
+
+</body>
+</html>
